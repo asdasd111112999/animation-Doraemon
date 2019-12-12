@@ -1,0 +1,26 @@
+
+.icon {
+    width: 2em; height: 2em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+#config{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    text-align: center;
+    opacity:0;
+}
+#config>.btn{
+    cursor: pointer;
+}
+#config>.ms{
+    background: #000;
+    color: white;
+    border-radius: 15%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -2,8 +2,6 @@ var css = `
 /*首先做一点准备工作*/
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     transition: all 1s;
 }
@@ -14,25 +12,22 @@ var css = `
     width: 1200px;
     height: 100vh;
     background:#159EFF;
-    display: flex;
-    position: fixed;
-    left: 50%;
-    margin-left: -600px;
 }
 #coding{
+    padding:20px;
     color:yellow;
     display: inline-block;
     width: 25%;
     height: 100vh;
     background: red;
     overflow: hidden;
-    padding:20px;
     font-size:15px;
     font-weight:400;
     user-select:none;
 }
 
 #config{
+    display:block;
     opacity:1;
 }
 .outline{
@@ -288,7 +283,8 @@ function write_css() {
         coding.innerHTML = css.substring(0, n);
         styleTag.innerHTML = css.substring(0, n);
         coding.scrollTop = coding.scrollHeight;
-        ms.children[0].innerText=speed+"ms";
+        console.log(ms.children);
+        ms.children[1].innerText=speed+"ms";
         if (n < css.length) {setTimeout(fn,speed)}
     }, speed)
 }

@@ -5,22 +5,39 @@
     fill: currentColor;
     overflow: hidden;
 }
+#animation{
+    display: flex;
+    position: fixed;
+    left: 50%;
+    margin-left: -600px;
+}
 #config{
     position: absolute;
     top: 40%;
     left: 25%;
     text-align: center;
     opacity:0;
+    display: none;
 }
 #config>.btn{
     cursor: pointer;
 }
-#config>.ms{
+#config>.ms>span{
     background: #000;
     color: white;
-    border-radius: 15%;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+}
+#config>.ms>span:nth-child(1){
+    border-radius: 10px 10px 0 0 ;
+}
+#config>.ms>span:nth-child(2){
+    border-radius:  0 0 10px 10px ;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
